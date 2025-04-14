@@ -1,5 +1,13 @@
 # UK Parliament - Product Team Home Exercise For Frontend Developers
 
+## Accessibility
+
+This exercise includes some instructions in PDF format. We’ve taken steps to make it as accessible as possible, 
+however, we recognise the room for improvement and are actively working to enhance PDF accessibility moving forward.
+
+If you experience any difficulty with this PDF or need it in an alternative format, please don’t hesitate 
+to reach out.
+
 ## Dependencies
 
 Please ensure you have the following installed:

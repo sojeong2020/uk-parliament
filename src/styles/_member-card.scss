@@ -1,0 +1,122 @@
+@use '_variables' as *;
+
+.member-card {
+    background-color: $background;
+    margin-bottom: $spacing-large;
+
+    &__container {
+        padding: 15px 15px 10px 15px;
+        border-top: $large-border-weight solid $brand;
+        display: flex;
+        align-items: flex-start;
+
+        @media (min-width: $large-breakpoint) {
+            padding: 20px 20px 15px 20px;
+            border-top: 0;
+            border-left: $large-border-weight solid $brand;
+            display: block;
+        }
+    }
+
+    &__image-container {
+        margin-right: $spacing-xlarge;
+        flex-shrink: 0;
+    }
+
+    &__content {
+        flex: 1;
+        min-width: 0;
+    }
+
+    &__image {
+        width: $small-image-size;
+        height: $small-image-size;
+        border-radius: 50%;
+        border: $small-border-weight solid $brand;
+
+        @media (min-width: $large-breakpoint) {
+            width: $large-image-size;
+            height: $large-image-size;
+            border: $large-border-weight solid;
+            margin-bottom: $spacing-xlarge;
+        }
+    }
+
+    &__party {
+        font-family: $font-stack;
+        font-size: $secondary-small-font-size;
+        line-height: $secondary-line-height;
+        color: $grey-2;
+        margin-bottom: $spacing-small;
+        overflow-wrap: break-word;
+
+        @media (min-width: $large-breakpoint) {
+            font-size: $secondary-large-font-size;
+            margin-bottom: $spacing-xlarge;
+        }
+    }
+
+    &__name {
+        font-family: $font-stack;
+        font-size: $primary-small-font-size;
+        line-height: $primary-line-height;
+        font-weight: bold;
+        color: $brand;
+        margin-bottom: $spacing-large;
+        overflow-wrap: break-word;
+
+        @media (min-width: $large-breakpoint) {
+            font-size: $primary-large-font-size;
+            margin-bottom: $spacing-xlarge;
+        }
+    }
+
+    &__constituency {
+        font-family: $font-stack;
+        font-size: $tertiary-small-font-size;
+        line-height: $tertiary-line-height;
+        color: $grey-2;
+        margin-bottom: $spacing-xlarge;
+        overflow-wrap: break-word;
+
+        @media (min-width: $large-breakpoint) {
+            font-size: $tertiary-large-font-size;
+        }
+    }
+
+    &__status {
+        display: inline-block;
+        font-family: $font-stack;
+        font-size: $tertiary-small-font-size;
+        line-height: $tertiary-line-height;
+        font-weight: bold;
+        color: $alert;
+        margin-bottom: $spacing-medium;
+        background-color: $grey-1;
+        padding:  $spacing-medium $spacing-large;
+        overflow-wrap: break-word;
+        max-width: 100%;
+
+        @media (min-width: $large-breakpoint) {
+            font-size: $tertiary-large-font-size;
+            margin-bottom: $spacing-large;
+            padding: $spacing-large;
+        }
+    }
+
+    &__loading, &__error {
+        font-family: $font-stack;
+        font-size: $secondary-small-font-size;
+        line-height: $secondary-line-height;
+        padding: $spacing-large;
+        text-align: center;
+        
+        @media (min-width: $large-breakpoint) {
+            font-size: $secondary-large-font-size;
+            padding: $spacing-xlarge;
+        }
+    }
+
+
+
+}

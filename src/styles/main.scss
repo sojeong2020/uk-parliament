@@ -1,0 +1,27 @@
+@use '_variables' as *;
+@use '_member-card';
+
+body {
+    font-family: $font-stack;
+    margin: 0;
+    padding: 0;
+    background-color: $grey-1;
+}
+
+.container {
+    padding: 30px 15px;
+
+    @media (min-width: $large-breakpoint) {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.card-wrapper {
+    width: 100%;
+
+    @media (min-width: $large-breakpoint) {
+        width: 450px;
+    }
+}

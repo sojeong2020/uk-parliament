@@ -19,20 +19,17 @@ export class MemberCard {
             this.memberLoading();
 
             const data = await fetchMemberData(memberId);
-            console.log(data,"data")
 
             if (data.value) {
 
                 this.renderMember(data.value)
 
             } else {
-                console.log('Unexpected response')
                 this.displayErrorMessage('Unexpected response');
             }
 
         }
         catch (error) {
-            console.log(error);
             this.displayErrorMessage(`${error}`)
         }    
     }
@@ -42,10 +39,6 @@ export class MemberCard {
             const member = memberData;
             const party = member.latestParty;
             const membership = member.latestHouseMembership;
-
-            console.log('Rendering member:', member);
-            console.log('Party:', party);
-            console.log('Membership:', membership);
 
             //Check if the member's end date is before the current date
             const membershipEndDate = membership && membership.membershipEndDate &&
@@ -82,7 +75,6 @@ export class MemberCard {
 
         }
         catch (error) {
-            console.log(error,"error")
             this.displayErrorMessage(`${error}`);
         }
             

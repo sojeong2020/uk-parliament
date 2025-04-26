@@ -43,7 +43,6 @@
     }
 
     &__party {
-        font-family: $font-stack;
         font-size: $secondary-small-font-size;
         line-height: $secondary-line-height;
         color: $grey-2;
@@ -57,7 +56,6 @@
     }
 
     &__name {
-        font-family: $font-stack;
         font-size: $primary-small-font-size;
         line-height: $primary-line-height;
         font-weight: bold;
@@ -72,7 +70,6 @@
     }
 
     &__constituency {
-        font-family: $font-stack;
         font-size: $tertiary-small-font-size;
         line-height: $tertiary-line-height;
         color: $grey-2;
@@ -86,7 +83,6 @@
 
     &__status {
         display: inline-block;
-        font-family: $font-stack;
         font-size: $tertiary-small-font-size;
         line-height: $tertiary-line-height;
         font-weight: bold;
@@ -105,7 +101,6 @@
     }
 
     &__loading, &__error {
-        font-family: $font-stack;
         font-size: $secondary-small-font-size;
         line-height: $secondary-line-height;
         padding: $spacing-large;

@@ -2,7 +2,7 @@ import { fetchMemberData } from './api';
 import { Member } from './types';
 
 export class MemberCard {
-    private memberCard: HTMLElement;
+    private memberCardContainer: HTMLElement;
 
     constructor(memberCardId: string) {
         const element = document.getElementById(memberCardId);
@@ -11,7 +11,7 @@ export class MemberCard {
             throw new Error(`${memberCardId} not found`)
         }
 
-        this.memberCard = element;
+        this.memberCardContainer = element;
     }
 
     async getMember(memberId: string): Promise<void> {
@@ -71,7 +71,7 @@ export class MemberCard {
             </div>
             `;
 
-            this.memberCard.innerHTML = html;
+            this.memberCardContainer.innerHTML = html;
 
         }
         catch (error) {
@@ -86,7 +86,7 @@ export class MemberCard {
             <div class="member-card__loading"> Loading ...</div>
         </div>
         `
-        this.memberCard.innerHTML = html;
+        this.memberCardContainer.innerHTML = html;
 
     }
 
@@ -96,7 +96,7 @@ export class MemberCard {
              <div class="member-card__error">${message}</div>
         </div>
         `
-        this.memberCard.innerHTML = html;
+        this.memberCardContainer.innerHTML = html;
 
     }
 
